@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Let's play</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<div class="sc"></div>
+<h1>Responde y gana</h1>
+<br><br><br>
+
+<form id = "quiz" name = "quiz" >
+
+
+<p class = "questions">¿En que año murio hitler?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">¿Quien fue el primer presdente de estados unidos?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Correct"> George Washington<br>
+<input type = "radio" id = "mc" name = "question2" value = "False"> Abraham Lincoln<br>
+
+<p class = "questions">¿Quien descubrio america?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Correct"> Colon<br>
+<input type = "radio" id = "mc" name = "question3" value = "False"> Americo<br>
+
+<p class = "questions">¿Cuantos departamentos tiene colombia?</p>
+<input id = "textbox" type = "text" name = "question4">
+
+<p class = "questions">¿En que continente queda bielorusia?</p>
+<input type = "radio" id = "mc" name = "question5" value = "False"> Asia<br>
+<input type = "radio" id = "mc" name = "question5" value = "Correct"> Europa<br>
+
+<p class = "questions">¿Cual es el oceano mas grande?</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "Correct"> Pacifico<br>
+<input type = "radio" id = "mc" name = "question6" value = "False"> Indico<br>
+
+<p class = "questions">¿Quien escribio 100 años de soledad?</p>
+<input type = "radio" id = "mc" name = "question7" value = "False"> Rafael Pombo<br>
+<input type = "radio" id = "mc" name = "question7" value = "Correct"> Gabriel Garcia<br>
+
+<p class = "questions">¿Cual es el pais mas poblado?</p>
+
+<input type = "radio" id = "mc" name = "question8" value = "False"> India<br>
+<input type = "radio" id = "mc" name = "question8" value = "Correct"> China<br>
+
+<input id = "button" type = "button" value = "Next" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
